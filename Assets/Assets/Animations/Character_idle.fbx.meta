@@ -106,10 +106,13 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     human: []
     skeleton: []
 =======
+=======
+>>>>>>> camato-update
     human:
     - boneName: Hips
       humanName: Hips
@@ -803,7 +806,10 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.000000059604645, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> camato-update
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -816,7 +822,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
+<<<<<<< HEAD
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8b1fa443d0269eb4ebdffd9c0a0a89b7, type: 3}
+=======
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 70cd865412c0fc24fae588f5506b39c1, type: 3}
+>>>>>>> camato-update
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

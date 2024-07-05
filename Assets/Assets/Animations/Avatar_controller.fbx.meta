@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8b1fa443d0269eb4ebdffd9c0a0a89b7
+=======
+guid: 70cd865412c0fc24fae588f5506b39c1
+>>>>>>> camato-update
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
@@ -30,6 +34,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
+<<<<<<< HEAD
     clipAnimations:
     - serializedVersion: 16
       name: mixamo.com
@@ -60,6 +65,9 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
+=======
+    clipAnimations: []
+>>>>>>> camato-update
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -105,6 +113,7 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
+<<<<<<< HEAD
     human:
     - boneName: Hips
       humanName: Hips
@@ -798,6 +807,10 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.000000059604645, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+=======
+    human: []
+    skeleton: []
+>>>>>>> camato-update
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

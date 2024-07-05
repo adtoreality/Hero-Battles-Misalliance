@@ -5180,7 +5180,11 @@ Animator:
   m_GameObject: {fileID: 1477756676031261125}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 751cd72e137062d4ca901562e1593283, type: 3}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 7246537708ca1314ebcfc2435fe3a51c, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: f4402b4b89982e74fabcba23fc5c2ee3, type: 2}
+>>>>>>> camato-update
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7164,7 +7168,11 @@ Animator:
   m_GameObject: {fileID: 3560589348051193381}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 751cd72e137062d4ca901562e1593283, type: 3}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 7246537708ca1314ebcfc2435fe3a51c, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: f4402b4b89982e74fabcba23fc5c2ee3, type: 2}
+>>>>>>> camato-update
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7202,7 +7210,11 @@ Animator:
   m_GameObject: {fileID: 3560589348188153556}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 751cd72e137062d4ca901562e1593283, type: 3}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 7246537708ca1314ebcfc2435fe3a51c, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: f4402b4b89982e74fabcba23fc5c2ee3, type: 2}
+>>>>>>> camato-update
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7240,7 +7252,11 @@ Animator:
   m_GameObject: {fileID: 3560589348207849528}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 751cd72e137062d4ca901562e1593283, type: 3}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 7246537708ca1314ebcfc2435fe3a51c, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: f4402b4b89982e74fabcba23fc5c2ee3, type: 2}
+>>>>>>> camato-update
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7278,7 +7294,11 @@ Animator:
   m_GameObject: {fileID: 3560589348219702566}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 751cd72e137062d4ca901562e1593283, type: 3}
+<<<<<<< HEAD
   m_Controller: {fileID: 9100000, guid: 7246537708ca1314ebcfc2435fe3a51c, type: 2}
+=======
+  m_Controller: {fileID: 9100000, guid: f4402b4b89982e74fabcba23fc5c2ee3, type: 2}
+>>>>>>> camato-update
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
