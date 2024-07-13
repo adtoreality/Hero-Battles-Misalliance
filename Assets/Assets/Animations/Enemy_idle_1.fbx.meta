@@ -810,11 +810,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-<<<<<<< HEAD
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8b1fa443d0269eb4ebdffd9c0a0a89b7, type: 3}
-=======
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 70cd865412c0fc24fae588f5506b39c1, type: 3}
->>>>>>> camato-update
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

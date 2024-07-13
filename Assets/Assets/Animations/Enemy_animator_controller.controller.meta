@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Assets/Animations/Enemy_animator_controler.controller.meta
-guid: ea73919138439d447a506d1662e9f4c7
-========
 guid: f4402b4b89982e74fabcba23fc5c2ee3
->>>>>>>> camato-update:Assets/Assets/Animations/Enemy_animator_controller.controller.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
