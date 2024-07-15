@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class playerManager : MonoBehaviour
 {
-    [SerializeField] int playerLevel = 127;
+    [SerializeField] int playerLevel = 128;
     [SerializeField] Text playerLevelText;
-    [SerializeField] int ennemyLevel = 126;
+    [SerializeField] int ennemyLevel = 128;
     [SerializeField] Text ennemyLevelText;
+    [SerializeField] bool isStronger;
+    [SerializeField] bool isReallyStronger;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,21 @@ public class playerManager : MonoBehaviour
     void Update()
     {
         //Debug.Log("PlayerManager script game update");
+    }
+
+    public void startCombat()
+    {
+        if (isStronger)
+        {
+            //condition if player is really stronger than ennemy
+            //play a really badass animation of player throwing enneny
+            //condition to determine if player is armed
+            //play specific animation depending on the player's weapon
+        }
+        else
+        {
+            //play random animation from set of animations on failing
+        }
     }
 
     // OnTriggerEnter est appelé quand le Collider other entre dans le déclencheur
