@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ennemy
   - Dagger_01
+  - weapon
   layers:
   - Default
   - TransparentFX
