@@ -4,43 +4,25 @@ using UnityEngine;
 
 public class Player_inventory : MonoBehaviour
 {
+    //Ajouter les variable relative aux information du joueur
+
     //Tableau pour les différentes armes 
-    public GameObject[] weapons;
-
-    //Distance pour ramasser une arme 
-    public float pickUpRange = 2.0f;
-
+    public static GameObject[] weapons;
 
     // Start is called before the first frame update
     void Start()
     {
-        weapons[0] = GameObject.Find("Dagger_01");
+        //Taille du tableau d'arme 
+        weapons = new GameObject[3];
+        //initialisation de l'arme principal
+        weapons[0] = GameObject.FindGameObjectWithTag("Dagger_01");
     }
 
     // Update is called once per frame
     void Update()
     {
         //Ramasser une arme 
-        //for(int i = 1; i < weapons.Length; i++)
-        //{
-        //    //Distance entre l'arme et le joueur 
-        //    float Distance = Vector3.Distance(transform.position, weapons[i].transform.position);
-
-        //    if (Distance <= pickUpRange)
-        //    {
-        //        weapons[0] = weapons[i];
-        //    }
-        //}
         //Equiper la nouvelle arme 
         //Deséquiper l'anciene arme 
     }
-
-    //public void OnDrawGizmos()
-    //{
-    //    foreach (GameObject weapon in weapons)
-    //    {
-    //        Gizmos.color = Color.yellow;
-    //        Gizmos.DrawWireSphere(weapon.transform.position, pickUpRange);
-    //    }
-    //}
 }
