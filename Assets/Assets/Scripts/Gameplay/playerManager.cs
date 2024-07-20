@@ -35,10 +35,14 @@ public class playerManager : MonoBehaviour
             //play a really badass animation of player throwing enneny
             //condition to determine if player is armed
             //play specific animation depending on the player's weapon
+              //if player has no weapon fists animation
+              //if player has dagger, dagger animation
+              //if player has sword, sword animation
+              //if player has great sword, great sword animation
         }
         else
         {
-            //play random animation from set of animations on failing
+            //play random animation from set of animations on being killed and dying
         }
     }
 
