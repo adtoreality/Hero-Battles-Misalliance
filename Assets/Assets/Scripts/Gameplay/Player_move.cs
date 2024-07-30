@@ -12,10 +12,16 @@ public class Player_move : MonoBehaviour
     bool isMoving;
     //pour remplacer le le numéro du bouton gauche de la souris
     const int LEFT_MOUSE_BOTTON = 0; 
+    //Variable de l'animator du joueur
+    private Animator animator;
+    //Marquer pour l'emplacement de destination 
+    public GameObject marquer;
 
     // Start is called before the first frame update
     void Start()
     {
+        //On assigne le component 
+        animator = gameObject.GetComponent<Animator>();
         //Au lancement la cible est la position du joueur (Pour qu'il soit sur place)
         targetPosition = transform.position;
         //Au lancement le joueur ne ce déplace pas 
@@ -50,10 +56,13 @@ public class Player_move : MonoBehaviour
         //
         if(plane.Raycast(ray, out point))
         {
+            //Assignation de l'objectif vers lequel on se déplace
             targetPosition = ray.GetPoint(point);
-
+            //Positionnement du marqueur
+            marquer.transform.position = new Vector3(targetPosition.x, marquer.transform.position.y, marquer.transform.position.z);
             //Le jouer ce déplace
             isMoving = true;
+            animator.SetBool("isRunning", isMoving);
         }
     }
 
@@ -70,13 +79,13 @@ public class Player_move : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0f, 90f, 0f);
         }
-        //transform.LookAt(targetPosition);
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
         //Si le personnage est arrivé à destination 
-        if(transform.position == targetPosition)
+        if(transform.position.x == targetPosition.x)
         {
             isMoving = false;
+            animator.SetBool("isRunning", isMoving);
         }
 
         //On dessine le raycast dans la scène 

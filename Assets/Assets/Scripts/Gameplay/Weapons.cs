@@ -5,7 +5,6 @@ using UnityEngine;
 public class Weapons : MonoBehaviour
 {
     //Différent types d'arme 
-    public bool dagger;
     public bool sword_blue;
     public bool sword_red;
     public bool sword_lava;
@@ -26,6 +25,8 @@ public class Weapons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*C'est ici qu'il faut définir comment les attaques seront 
+        effectuer en fonction de la distance avec les différentes boites
+        de collision avec des fonction à ^part si nécessaire.*/
     }
 }

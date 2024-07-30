@@ -11,10 +11,6 @@ public class Elevator_move : MonoBehaviour
     public float elevator_range = 5f;
     //Variable pour les bouton 
     public GameObject button;
-    //Les étages 
-    public Transform bracnh0;
-    public Transform bracnh1;
-    public Transform bracnh2;
 
     // Mouvement de l'ascenseur 
     public bool canMove;
@@ -60,6 +56,19 @@ public class Elevator_move : MonoBehaviour
         {
             //L'ascenseur s'arrête 
             canMove = false;
+
+            /* Rajouter le script de l'ouverture des portes pour que le joueur puisse passez
+             et allez attaquer les ennemis présent sur cette étage puis refermer */
+            //On verifie si l'ascenseur est encore au niveau du sol 
+            if(Vector3.Distance(transform.position, points[0].position) < 0.01f)
+            {
+                //Le joueur ne peut pas traverser les portes de l'ascenseur 
+                player.GetComponent<Player_move>().enabled = canMove;
+            }else
+            {
+                //Le joueur peut traverser les portes de l'ascenseur 
+                player.GetComponent<Player_move>().enabled = !canMove;
+            }
         }
 
         //Si l'ascenseur est activé 
@@ -78,6 +87,8 @@ public class Elevator_move : MonoBehaviour
             return;
         }
         canMove = true;
+        //Le joueur ne peut pas se déplacer quand l'ascenceur est en mouvement  
+        player.GetComponent<Player_move>().enabled = !canMove;
         i++;
     }
     
@@ -90,6 +101,8 @@ public class Elevator_move : MonoBehaviour
             return;
         }
         canMove = true;
+        //Le joueur ne peut pas se déplacer quand l'ascenceur est en mouvement  
+        player.GetComponent<Player_move>().enabled = !canMove;
         i--;
     }
 
