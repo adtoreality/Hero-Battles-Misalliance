@@ -24,6 +24,10 @@ public class Elevator_move : MonoBehaviour
     int i;
     /*bool reverse;*/
 
+    //Sources et clip audio
+    public AudioSource elevator_audioSource;
+    public AudioSource button_audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -74,6 +78,7 @@ public class Elevator_move : MonoBehaviour
         //Si l'ascenseur est activé 
         if(canMove)
         {
+            //On déplace l'ascenseur vers l'étage correspondant 
             transform.position = Vector3.MoveTowards(transform.position, points[i].position, elevatorSpeed * Time.deltaTime);        
         }
     }
@@ -81,12 +86,17 @@ public class Elevator_move : MonoBehaviour
     //Fonction pour faire monté l'ascensseur 
     public void ElavetorUp()
     {
+        //On lance le son du bouton 
+        button_audioSource.Play();
+
         if (i == points.Length - 1)
         {
             Debug.Log("Limite supérieur.");
             return;
         }
         canMove = true;
+        //On la le son de déplacement 
+        elevator_audioSource.Play();
         //Le joueur ne peut pas se déplacer quand l'ascenceur est en mouvement  
         player.GetComponent<Player_move>().enabled = !canMove;
         i++;
@@ -95,12 +105,17 @@ public class Elevator_move : MonoBehaviour
     //Fonction pour faire descendre l'ascensseur 
     public void ElavetorDown()
     {
+        //On lance le son du bouton 
+        button_audioSource.Play();
+
         if (i == 0)
         {
             Debug.Log("Limite inférieur.");
             return;
         }
         canMove = true;
+        //On la le son de déplacement 
+        elevator_audioSource.Play();
         //Le joueur ne peut pas se déplacer quand l'ascenceur est en mouvement  
         player.GetComponent<Player_move>().enabled = !canMove;
         i--;
