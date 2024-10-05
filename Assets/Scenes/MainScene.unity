@@ -695,13 +695,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210136939}
-  m_LocalRotation: {x: 0.048395745, y: -0.7054487, z: 0.048395745, w: 0.7054487}
-  m_LocalPosition: {x: 2.84, y: 0.81, z: -1.9}
+  m_LocalRotation: {x: 0.15879226, y: -0.052788515, z: 0.008502607, w: 0.98586315}
+  m_LocalPosition: {x: 0.63, y: 1.494, z: -4.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 7.849, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 18.3, y: -6.13, z: 0}
 --- !u!1 &1217107747
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +765,8 @@ MonoBehaviour:
   playerLevelText: {fileID: 1480440924}
   ennemyLevel: 128
   ennemyLevelText: {fileID: 1716553074}
+  isStronger: 0
+  isReallyStronger: 0
 --- !u!54 &1217107751
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -63,6 +63,7 @@ public class playerManager : MonoBehaviour
         if (other.tag == "ennemy")
         {
             //Debug.Log("Ennemy is among us");
+            //stop running animation and face enemy
             StartCoroutine(LevelComparison());
         }
     }
@@ -73,15 +74,20 @@ public class playerManager : MonoBehaviour
         {
             if(playerLevel>=ennemyLevel)
             {
-                ennemyLevel--;
-                ennemyLevelText.text = ennemyLevel.ToString();
-                yield return new WaitForSeconds(1.5f);
+                
+                //ennemyLevel--;
+                //ennemyLevelText.text = ennemyLevel.ToString();
+                //playerLevel++;
+                //playerLevelText.text = playerLevel.ToString();
+                //yield return new WaitForSeconds(1.5f);
             }
             else
             {
-                playerLevel--;
-                playerLevelText.text = playerLevel.ToString();
-                yield return new WaitForSeconds(1.5f);
+                //playerLevel--;
+                //playerLevelText.text = playerLevel.ToString();
+                //ennemyLevel++;
+                //ennemyLevelText.text = ennemyLevel.ToString();
+                //yield return new WaitForSeconds(1.5f);
             }
         }
         
