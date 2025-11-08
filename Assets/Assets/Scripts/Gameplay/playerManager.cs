@@ -68,30 +68,30 @@ public class playerManager : MonoBehaviour
         }
     }
 
-    // IEnumerator LevelComparison()
-    // {
-    //     while(playerLevel>0 && ennemyLevel>0)
-    //     {
-    //         if(playerLevel>=ennemyLevel)
-    //         {
+    IEnumerator LevelComparison()
+    {
+        while(playerLevel>0 && ennemyLevel>0)
+        {
+            if(playerLevel>=ennemyLevel)
+            {
                 
-    //             //ennemyLevel--;
-    //             //ennemyLevelText.text = ennemyLevel.ToString();
-    //             //playerLevel++;
-    //             //playerLevelText.text = playerLevel.ToString();
-    //             //yield return new WaitForSeconds(1.5f);
-    //         }
-    //         else
-    //         {
-    //             //playerLevel--;
-    //             //playerLevelText.text = playerLevel.ToString();
-    //             //ennemyLevel++;
-    //             //ennemyLevelText.text = ennemyLevel.ToString();
-    //             //yield return new WaitForSeconds(1.5f);
-    //         }
-    //     }
+                ennemyLevel--;
+                ennemyLevelText.text = ennemyLevel.ToString();
+                playerLevel++;
+                playerLevelText.text = playerLevel.ToString();
+                yield return new WaitForSeconds(1.5f);
+            }
+            else
+            {
+                playerLevel--;
+                playerLevelText.text = playerLevel.ToString();
+                ennemyLevel++;
+                ennemyLevelText.text = ennemyLevel.ToString();
+                yield return new WaitForSeconds(1.5f);
+            }
+        }
         
-    // }
+    }
     
 
 }
